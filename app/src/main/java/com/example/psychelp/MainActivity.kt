@@ -6,16 +6,22 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.FilterQueryProvider
 import android.widget.SearchView
+import android.widget.TextView
 import com.example.psychelp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityMainBinding
 
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val textView = findViewById<TextView>(R.id.textView)
+        textView.text = "Notfallnummer: 116117"
 
         val user = arrayOf("test1","test2","test3")
 
