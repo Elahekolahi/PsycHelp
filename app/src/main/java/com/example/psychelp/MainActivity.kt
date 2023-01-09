@@ -1,10 +1,13 @@
 package com.example.psychelp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.FilterQueryProvider
+import android.widget.ImageButton
 import android.widget.SearchView
 import android.widget.TextView
 import com.example.psychelp.Contact
@@ -23,6 +26,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val secondActbutton = findViewById<ImageButton>(R.id.button1)
+        secondActbutton.setOnClickListener {
+            val Intent = Intent(this,SecondActivity::class.java)
+            startActivity(Intent)
+
+        }
+
 
         val textView = findViewById<TextView>(R.id.textView)
         textView.text = "Notfallnummer: 116117"
