@@ -17,11 +17,9 @@ import com.example.psychelp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+
+
     lateinit var binding : ActivityMainBinding
-
-
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         )
         binding.userlist.adapter = ContactAdapter
 
+
         binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
                 binding.searchView.clearFocus()
@@ -66,5 +65,9 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
+
+
+
+
 }
 
