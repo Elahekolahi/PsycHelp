@@ -13,11 +13,13 @@ import android.widget.TextView
 import com.example.psychelp.Contact
 import com.example.psychelp.User
 import com.example.psychelp.databinding.ActivityMainBinding
+
+
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityMainBinding
 
-    val contact1 =Contact ("a","b","c","d","e")
+
 
 
 

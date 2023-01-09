@@ -1,4 +1,4 @@
 package com.example.psychelp
 
 
-class Contact(var name: String, var phone: String, var email: String, var address: String, var place : String)
+data class Contact(val id: Int, val name: String, val phone: String, val email: String,  val place : String)
